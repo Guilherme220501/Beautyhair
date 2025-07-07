@@ -39,7 +39,6 @@
             position: fixed;
             top: 0;
             width: 100%;
-            flex-wrap: wrap;
             z-index: 1000;
             transition: all 0.3s ease;
         }
@@ -620,7 +619,21 @@
 
         /* Responsive Design */
         @media (max-width: 600px) {
-            .header{flex-direction: column;align-items: flex-start;}
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem; /* espaçamento entre os itens */
+  }
+
+  .nav-container a {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
+
+
+        @media (max-width: 600px) {
             .nav-menu {
                 display: none;
             }
